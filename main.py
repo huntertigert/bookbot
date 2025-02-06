@@ -10,7 +10,7 @@ def main():
         string_lower = file_contents.lower()
         for char in string_lower:
             character_count[char] = character_count.get(char, 0) + 1
-            
+
         # converting the list of dictionaries
         char_list = list(character_count.items())
         alpha_chars = []
@@ -34,7 +34,7 @@ def main():
     print(f"{word_count} words found in the document\n")
 
     for char_dict in alpha_chars:
-        print(f"The '{char_dict["name"]}' character was found {char_dict["num"]} times")
+        print(f"The '{char_dict['name']}' character was found {char_dict['num']} times")
 
     print("--- End report ---")
 # This line calls your main function when the program runs
